@@ -1,7 +1,7 @@
 // ===================================================================
 // Last Units (推薦房型) — Oxley Tower · SO/ Sofitel KL
 // Design: Oriental Luxury
-// Colors: Forest Green #1a3a2a, Gold #c9a96e, Ivory #f5f0e8
+// Colors: Forest Green #1a2a3a, Gold #c9a96e, Ivory #f5f0e8
 // ===================================================================
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -34,7 +34,7 @@ import { Link } from "wouter";
 // ─── Header ─────────────────────────────────────────────────────────
 function PageHeader({ lineLink }: { lineLink: string }) {
   return (
-    <header className="bg-[#1a3a2a] border-b border-[#c9a96e]/20 sticky top-0 z-50">
+    <header className="bg-[#1a2a3a] border-b border-[#c9a96e]/20 sticky top-0 z-50">
       <div className="container py-4 flex items-center justify-between">
         <Link
           href={`/?${new URLSearchParams(window.location.search).toString()}`}
@@ -73,7 +73,7 @@ function PromotionHero({ lineLink }: { lineLink: string }) {
           alt="Oxley Tower"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#1a3a2a]/85" />
+        <div className="absolute inset-0 bg-[#1a2a3a]/85" />
       </div>
       <div className="relative z-10 container text-center">
         <span className="text-[#c9a96e] text-xs tracking-[0.4em] font-light">
@@ -128,7 +128,7 @@ function UnitTypeGroup({
     >
       {/* Type header */}
       <div className="flex items-center gap-4 mb-6">
-        <div className="bg-[#1a3a2a] text-[#c9a96e] px-4 py-2">
+        <div className="bg-[#1a2a3a] text-[#c9a96e] px-4 py-2">
           <span className="font-serif text-lg font-bold">{typeInfo.name}</span>
         </div>
         <div className="flex-1 h-px bg-[#c9a96e]/20" />
@@ -180,7 +180,7 @@ function UnitFloorCard({
         className="w-full px-6 py-4 flex items-center justify-between group"
       >
         <div className="flex items-center gap-4">
-          <span className="font-serif text-xl text-[#1a3a2a] font-bold group-hover:text-[#c9a96e] transition-colors">
+          <span className="font-serif text-xl text-[#1a2a3a] font-bold group-hover:text-[#c9a96e] transition-colors">
             {unit.floor}
           </span>
           <span className="text-xs text-[#2d2d2d]/40">
@@ -209,7 +209,7 @@ function UnitFloorCard({
         <div className="border-t border-[#c9a96e]/10 animate-in fade-in slide-in-from-top-2 duration-300">
           <div className="p-6 sm:p-8">
             {/* Price highlight */}
-            <div className="bg-[#1a3a2a] p-6 mb-8">
+            <div className="bg-[#1a2a3a] p-6 mb-8">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div>
                   <span className="text-[#f5f0e8]/50 text-xs block mb-1">牌價</span>
@@ -332,7 +332,7 @@ function UnitFloorCard({
               </a>
               <a
                 href={tourLink}
-                className="btn-gold-outline px-6 py-3 text-sm rounded-sm inline-flex items-center gap-2 text-[#1a3a2a]"
+                className="btn-gold-outline px-6 py-3 text-sm rounded-sm inline-flex items-center gap-2 text-[#1a2a3a]"
               >
                 報名考察團
               </a>
@@ -354,17 +354,17 @@ function DetailRow({
   value: string;
 }) {
   return (
-    <div className="flex items-center gap-3 py-2 border-b border-[#1a3a2a]/5">
+    <div className="flex items-center gap-3 py-2 border-b border-[#1a2a3a]/5">
       <span className="text-[#c9a96e]">{icon}</span>
       <span className="text-xs text-[#2d2d2d]/50 w-24 shrink-0">{label}</span>
-      <span className="text-sm text-[#1a3a2a] font-medium">{value}</span>
+      <span className="text-sm text-[#1a2a3a] font-medium">{value}</span>
     </div>
   );
 }
 // ─── Bottom CTA ─────────────────────────────────────────────────────
 function BottomCTA({ lineLink, tourLink }: { lineLink: string; tourLink: string }) {
   return (
-    <section className="bg-[#1a3a2a] py-16">
+    <section className="bg-[#1a2a3a] py-16">
       <div className="container text-center">
         <span className="text-[#c9a96e] text-xs tracking-[0.3em]">
           INTERESTED?
@@ -401,7 +401,7 @@ function BottomCTA({ lineLink, tourLink }: { lineLink: string; tourLink: string 
 // ─── Footer ─────────────────────────────────────────────────────────
 function PageFooter() {
   return (
-    <footer className="bg-[#0f2219] py-8">
+    <footer className="bg-[#0f1a2a] py-8">
       <div className="container text-center">
         <p className="text-[#f5f0e8]/30 text-xs leading-relaxed max-w-2xl mx-auto">
           免責聲明：本網站所載資料僅供參考，不構成任何要約或承諾。所有圖片、平面圖及規格以最終買賣合約為準。開發商保留修改設計及規格之權利，恕不另行通知。

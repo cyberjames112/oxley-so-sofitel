@@ -28,7 +28,7 @@ export default function SectionWrapper({
     <section
       id={id}
       ref={ref}
-      className={`relative ${dark ? "bg-[#1a3a2a] text-[#f5f0e8]" : "bg-[#f5f0e8] text-[#2d2d2d]"} ${className}`}
+      className={`relative ${dark ? "bg-[#1a2a3a] text-[#f5f0e8]" : "bg-[#f5f0e8] text-[#2d2d2d]"} ${className}`}
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? "translateY(0)" : "translateY(30px)",

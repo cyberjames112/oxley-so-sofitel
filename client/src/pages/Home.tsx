@@ -1,7 +1,7 @@
 // ===================================================================
 // Home Page — Oxley Tower / SO/ Sofitel Kuala Lumpur
 // Design: Oriental Luxury (東方奢華)
-// Colors: Forest Green #1a3a2a, Gold #c9a96e, Ivory #f5f0e8
+// Colors: Forest Green #1a2a3a, Gold #c9a96e, Ivory #f5f0e8
 // ===================================================================
 
 import SectionWrapper from "@/components/SectionWrapper";
@@ -50,7 +50,7 @@ function HeroSection({ tourLink }: { tourLink: string }) {
           alt="Oxley Tower 吉隆坡 KLCC 外觀"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1a3a2a]/80 via-[#1a3a2a]/40 to-[#1a3a2a]/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1a2a3a]/80 via-[#1a2a3a]/40 to-[#1a2a3a]/70" />
       </div>
 
       {/* Content */}
@@ -149,7 +149,7 @@ function StatsBar() {
   return (
     <div
       ref={ref}
-      className="bg-[#1a3a2a] border-y border-[#c9a96e]/20"
+      className="bg-[#1a2a3a] border-y border-[#c9a96e]/20"
     >
       <div className="container py-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-4">
@@ -190,7 +190,7 @@ function KeyFeaturesSection() {
   return (
     <SectionWrapper number="01" label="KEY FEATURES" className="pb-20">
       <div className="container">
-        <h2 className="font-serif text-3xl sm:text-4xl text-[#1a3a2a] mb-3">
+        <h2 className="font-serif text-3xl sm:text-4xl text-[#1a2a3a] mb-3">
           建案五大特色
         </h2>
         <div className="gold-divider-wide" />
@@ -227,7 +227,7 @@ function FeatureCard({
       <div className="text-[#c9a96e] mb-4 group-hover:scale-110 transition-transform duration-300">
         {icon}
       </div>
-      <h3 className="font-serif text-lg text-[#1a3a2a] mb-2 font-semibold">
+      <h3 className="font-serif text-lg text-[#1a2a3a] mb-2 font-semibold">
         {feature.title}
       </h3>
       <p className="text-sm text-[#2d2d2d]/70 leading-relaxed">
@@ -321,13 +321,13 @@ function FloorPlanSection() {
   return (
     <SectionWrapper number="03" label="FLOOR PLANS" className="pb-20">
       <div className="container">
-        <h2 className="font-serif text-3xl sm:text-4xl text-[#1a3a2a] mb-3">
+        <h2 className="font-serif text-3xl sm:text-4xl text-[#1a2a3a] mb-3">
           房型介紹
         </h2>
         <div className="gold-divider-wide" />
 
         {/* Tabs */}
-        <div className="flex gap-1 mt-10 border-b border-[#1a3a2a]/10 overflow-x-auto">
+        <div className="flex gap-1 mt-10 border-b border-[#1a2a3a]/10 overflow-x-auto">
           {UNIT_TYPES.map((type) => (
             <button
               key={type.id}
@@ -359,7 +359,7 @@ function FloorPlanSection() {
 
           {/* Specs */}
           <div className="lg:col-span-2 flex flex-col justify-center">
-            <h3 className="font-serif text-2xl text-[#1a3a2a] mb-6">
+            <h3 className="font-serif text-2xl text-[#1a2a3a] mb-6">
               {activeType.name}
             </h3>
             <div className="space-y-4">
@@ -375,7 +375,7 @@ function FloorPlanSection() {
                 {FREE_FURNISHING.map((item) => (
                   <span
                     key={item}
-                    className="text-xs px-3 py-1.5 bg-[#1a3a2a]/5 text-[#1a3a2a]/70 border border-[#1a3a2a]/10"
+                    className="text-xs px-3 py-1.5 bg-[#1a2a3a]/5 text-[#1a2a3a]/70 border border-[#1a2a3a]/10"
                   >
                     {item}
                   </span>
@@ -399,9 +399,9 @@ function FloorPlanSection() {
 
 function SpecRow({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex justify-between items-center py-2 border-b border-[#1a3a2a]/5">
+    <div className="flex justify-between items-center py-2 border-b border-[#1a2a3a]/5">
       <span className="text-sm text-[#2d2d2d]/50">{label}</span>
-      <span className="text-sm font-medium text-[#1a3a2a]">{value}</span>
+      <span className="text-sm font-medium text-[#1a2a3a]">{value}</span>
     </div>
   );
 }
@@ -454,7 +454,7 @@ function AmenitiesSection() {
   return (
     <SectionWrapper number="05" label="AMENITIES" className="pb-20">
       <div className="container">
-        <h2 className="font-serif text-3xl sm:text-4xl text-[#1a3a2a] mb-3">
+        <h2 className="font-serif text-3xl sm:text-4xl text-[#1a2a3a] mb-3">
           公共設施
         </h2>
         <div className="gold-divider-wide" />
@@ -507,7 +507,7 @@ function AmenityPhoto({
         className="w-full h-40 sm:h-48 object-cover"
         loading="lazy"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#1a3a2a]/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+      <div className="absolute inset-0 bg-gradient-to-t from-[#1a2a3a]/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
         <span className="text-white text-sm font-light">{photo.label}</span>
       </div>
     </div>
@@ -581,7 +581,7 @@ function CTASection() {
           alt="城市景觀"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#1a3a2a]/80" />
+        <div className="absolute inset-0 bg-[#1a2a3a]/80" />
       </div>
       <div className="relative z-10 container py-24 text-center">
         <span className="text-[#c9a96e] text-sm tracking-[0.3em] font-light">
@@ -611,7 +611,7 @@ function CTASection() {
 //// ─── Footer ───────────────────────────────────────────────────
 function Footer({ lineLink, tourLink }: { lineLink: string; tourLink: string }) {
   return (
-    <footer className="bg-[#0f2219] text-[#f5f0e8]">
+    <footer className="bg-[#0f1a2a] text-[#f5f0e8]">
       <div className="container py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}

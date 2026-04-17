@@ -1,7 +1,7 @@
 // ===================================================================
 // Oxley Tower — SO/ Sofitel Kuala Lumpur — Data Constants
 // Design: Oriental Luxury (東方奢華)
-// Colors: Deep Forest Green #1a3a2a, Gold #c9a96e, Ivory #f5f0e8
+// Colors: Deep Navy Blue #1a2a3a, Gold #c9a96e, Ivory #f5f0e8
 // ===================================================================
 
 // BASE_URL is "/" in dev, "/oxley-so-sofitel/" on GitHub Pages (see vite.config.ts).
