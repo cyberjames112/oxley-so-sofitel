@@ -84,7 +84,7 @@ function PromotionHero({ lineLink }: { lineLink: string }) {
         </h1>
         <div className="gold-divider-wide mx-auto" />
         <p className="text-white/70 mt-4 max-w-lg mx-auto text-sm sm:text-base leading-relaxed">
-          精選 60 樓以上雙子星景觀戶・精裝拎包入住・每戶附贈 1 車位
+          精選 60 樓以上「面雙子星」與「城市景觀」戶
         </p>
         <div className="mt-6 flex justify-center gap-6 text-xs text-[#c9a96e]/70">
           <span>A2 ／ C1 戶型折扣 10% + 4% + 1%</span>
