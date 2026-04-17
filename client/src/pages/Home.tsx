@@ -347,7 +347,7 @@ function FloorPlanSection() {
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Floor plan image */}
           <div className="lg:col-span-3">
-            <div className="bg-white p-2 border border-[#c9a96e]/15">
+            <div className="bg-[#1b2737] border border-[#c9a96e]/15">
               <img
                 src={activeType.floorPlanImage}
                 alt={`${activeType.name} 格局圖`}

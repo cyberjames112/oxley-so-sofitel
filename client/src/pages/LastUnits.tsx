@@ -295,7 +295,7 @@ function UnitFloorCard({
                 <p className="text-xs text-[#2d2d2d]/50 mb-2 tracking-wider">
                   格局圖 — TYPE {unit.type}
                 </p>
-                <div className="border border-[#c9a96e]/15 p-1 bg-white">
+                <div className="border border-[#c9a96e]/15 bg-[#1b2737]">
                   <img
                     src={unit.floorPlanImage}
                     alt={`TYPE ${unit.type} 格局圖`}
@@ -308,7 +308,7 @@ function UnitFloorCard({
                 <p className="text-xs text-[#2d2d2d]/50 mb-2 tracking-wider">
                   樓層平面圖
                 </p>
-                <div className="border border-[#c9a96e]/15 p-1 bg-white">
+                <div className="border border-[#c9a96e]/15 bg-[#1b2737]">
                   <img
                     src={STOREY_PLAN}
                     alt="樓層平面圖"
