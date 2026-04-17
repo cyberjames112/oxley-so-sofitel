@@ -1,0 +1,299 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: 'Noto Sans TC', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --color-forest: #1a3a2a;
+  --color-forest-light: #2a5a3a;
+  --color-gold: #c9a96e;
+  --color-gold-light: #d4bc8a;
+  --color-gold-dark: #a8894e;
+  --color-ivory: #f5f0e8;
+  --color-ivory-dark: #ebe4d8;
+  --color-charcoal: #2d2d2d;
+  --color-brown: #4a3728;
+}
+
+:root {
+  --radius: 0.5rem;
+  --primary: oklch(0.35 0.06 160);
+  --primary-foreground: oklch(0.95 0.01 90);
+  --background: oklch(0.96 0.01 85);
+  --foreground: oklch(0.22 0.01 60);
+  --card: oklch(0.98 0.005 85);
+  --card-foreground: oklch(0.22 0.01 60);
+  --popover: oklch(0.98 0.005 85);
+  --popover-foreground: oklch(0.22 0.01 60);
+  --secondary: oklch(0.93 0.01 85);
+  --secondary-foreground: oklch(0.35 0.02 60);
+  --muted: oklch(0.93 0.005 85);
+  --muted-foreground: oklch(0.5 0.01 60);
+  --accent: oklch(0.75 0.08 85);
+  --accent-foreground: oklch(0.22 0.01 60);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.88 0.01 85);
+  --input: oklch(0.88 0.01 85);
+  --ring: oklch(0.75 0.08 85);
+  --chart-1: oklch(0.35 0.06 160);
+  --chart-2: oklch(0.75 0.08 85);
+  --chart-3: oklch(0.5 0.04 160);
+  --chart-4: oklch(0.6 0.06 85);
+  --chart-5: oklch(0.4 0.05 160);
+  --sidebar: oklch(0.96 0.01 85);
+  --sidebar-foreground: oklch(0.22 0.01 60);
+  --sidebar-primary: oklch(0.35 0.06 160);
+  --sidebar-primary-foreground: oklch(0.95 0.01 90);
+  --sidebar-accent: oklch(0.93 0.005 85);
+  --sidebar-accent-foreground: oklch(0.22 0.01 60);
+  --sidebar-border: oklch(0.88 0.01 85);
+  --sidebar-ring: oklch(0.75 0.08 85);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+}
+
+/* === Oriental Luxury Custom Styles === */
+
+/* Gold divider line */
+.gold-divider {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a96e, transparent);
+  margin: 1rem 0;
+}
+
+.gold-divider-wide {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a96e, transparent);
+  margin: 1.5rem 0;
+}
+
+/* Section numbering */
+.section-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: #c9a96e;
+  text-transform: uppercase;
+}
+
+/* Gold glow pulse animation for net price - Enhanced */
+@keyframes goldPulse {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(201, 169, 110, 0.4), 0 0 16px rgba(201, 169, 110, 0.2);
+    filter: brightness(1);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(201, 169, 110, 0.8), 0 0 32px rgba(201, 169, 110, 0.5), 0 0 48px rgba(201, 169, 110, 0.25);
+    filter: brightness(1.15);
+  }
+}
+
+.gold-pulse {
+  animation: goldPulse 2s ease-in-out infinite;
+  color: #c9a96e;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+/* Gradient overlay for images */
+.gradient-overlay {
+  position: relative;
+}
+.gradient-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(26, 58, 42, 0.7) 0%, rgba(26, 58, 42, 0.3) 40%, transparent 100%);
+  pointer-events: none;
+}
+
+.gradient-overlay-bottom::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 58, 42, 0.85) 0%, rgba(26, 58, 42, 0.4) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Scroll-triggered fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f0e8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a96e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8894e;
+}
+
+/* Playfair Display for headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Stats counter animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button gold hover effect */
+.btn-gold {
+  position: relative;
+  overflow: hidden;
+  background-color: #c9a96e;
+  color: #1a3a2a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  background-color: #d4bc8a;
+  box-shadow: 0 0 20px rgba(201, 169, 110, 0.4);
+}
+
+.btn-gold-outline {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #c9a96e;
+  color: #c9a96e;
+  background: transparent;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-gold-outline:hover {
+  background-color: rgba(201, 169, 110, 0.1);
+  box-shadow: 0 0 15px rgba(201, 169, 110, 0.2);
+}
+
+/* Image zoom on hover */
+.img-zoom {
+  overflow: hidden;
+}
+.img-zoom img {
+  transition: transform 0.6s ease;
+}
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Tab active indicator */
+.tab-gold-active {
+  border-bottom: 2px solid #c9a96e;
+  color: #c9a96e;
+}
