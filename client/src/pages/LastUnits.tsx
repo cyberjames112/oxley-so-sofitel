@@ -374,7 +374,7 @@ function BottomCTA({ lineLink, tourLink }: { lineLink: string; tourLink: string 
         </h2>
         <div className="gold-divider-wide mx-auto" />
         <p className="text-white/60 text-sm mt-4 mb-8 max-w-md mx-auto">
-          高樓層雙子星景觀戶數量有限，歡迎聯繫我們了解詳情或預約實地考察。
+          60 樓以上「面雙子星」與「城市景觀」戶數量有限，歡迎聯繫我們了解詳情或預約實地考察。
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
