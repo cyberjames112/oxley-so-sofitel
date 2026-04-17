@@ -3,7 +3,11 @@ import react from "@vitejs/plugin-react";
 import path from "node:path";
 import { defineConfig } from "vite";
 
+// Deployed at https://cyberjames112.github.io/oxley-so-sofitel/ when GITHUB_PAGES=true
+const base = process.env.GITHUB_PAGES === "true" ? "/oxley-so-sofitel/" : "/";
+
 export default defineConfig({
+  base,
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

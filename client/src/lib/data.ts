@@ -4,40 +4,44 @@
 // Colors: Deep Forest Green #1a3a2a, Gold #c9a96e, Ivory #f5f0e8
 // ===================================================================
 
+// BASE_URL is "/" in dev, "/oxley-so-sofitel/" on GitHub Pages (see vite.config.ts).
+// Prefixing so that public/images/* resolves under the Pages sub-path.
+const B = import.meta.env.BASE_URL;
+
 export const IMAGES = {
   // Hero / skyline
-  hero: "/images/hero.jpg",
-  facade1: "/images/hero.jpg",
-  facade4: "/images/hero.jpg",
-  city_view: "/images/city_view.jpg",
+  hero: `${B}images/hero.jpg`,
+  facade1: `${B}images/hero.jpg`,
+  facade4: `${B}images/hero.jpg`,
+  city_view: `${B}images/city_view.jpg`,
 
   // Lifestyle / amenities
-  so_rooftop: "/images/so_rooftop.jpg",
-  interior: "/images/interior.jpg",
-  lobby: "/images/lobby.jpg",
-  marketing: "/images/marketing.jpg",
+  so_rooftop: `${B}images/so_rooftop.jpg`,
+  interior: `${B}images/interior.jpg`,
+  lobby: `${B}images/lobby.jpg`,
+  marketing: `${B}images/marketing.jpg`,
 
   // Amenities grid reuses
-  gym: "/images/so_rooftop.jpg",
-  pool_view1: "/images/so_rooftop.jpg",
-  pool_view2: "/images/city_view.jpg",
-  playground: "/images/marketing.jpg",
-  bbq: "/images/marketing.jpg",
-  pavilion: "/images/marketing.jpg",
-  lift_lobby: "/images/lobby.jpg",
+  gym: `${B}images/so_rooftop.jpg`,
+  pool_view1: `${B}images/so_rooftop.jpg`,
+  pool_view2: `${B}images/city_view.jpg`,
+  playground: `${B}images/marketing.jpg`,
+  bbq: `${B}images/marketing.jpg`,
+  pavilion: `${B}images/marketing.jpg`,
+  lift_lobby: `${B}images/lobby.jpg`,
 
   // Construction / location
-  real_photo1: "/images/advantages_page.jpg",
-  real_photo2: "/images/city_view.jpg",
-  real_photo3: "/images/storey_overview.jpg",
+  real_photo1: `${B}images/advantages_page.jpg`,
+  real_photo2: `${B}images/city_view.jpg`,
+  real_photo3: `${B}images/storey_overview.jpg`,
 
   // Floor plans + map
-  page_006: "/images/storey_plan.jpg",   // storey plan
-  page_007: "/images/fp_a2.jpg",         // Type A-2 studio
-  page_008: "/images/fp_c1.jpg",         // Type C-1 1+1
-  page_009: "/images/fp_d1.jpg",         // Type D-1 2bed
-  page_010: "/images/fp_d3.jpg",         // Type D-3 dual-key
-  page_011: "/images/map.jpg",           // location map
+  page_006: `${B}images/storey_plan.jpg`,
+  page_007: `${B}images/fp_a2.jpg`,
+  page_008: `${B}images/fp_c1.jpg`,
+  page_009: `${B}images/fp_d1.jpg`,
+  page_010: `${B}images/fp_d3.jpg`,
+  page_011: `${B}images/map.jpg`,
 } as const;
 
 export const STOREY_PLAN = IMAGES.page_006;
