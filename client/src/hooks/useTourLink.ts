@@ -1,4 +1,4 @@
-const BASE_TOUR_URL = "https://ccps-presentation-production.up.railway.app/booking";
+const BASE_TOUR_URL = "https://ccps-presentation-production.up.railway.app/b/mnuunqzn";
 
 /**
  * Hook to get the tour booking link with query parameters
